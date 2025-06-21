@@ -494,8 +494,14 @@ footer {
 
     .swiper {
     width: 95%;
+    padding-bottom: 100px; 
     }
 
+    .swiper-slide {
+    padding-bottom: 3rem;
+    min-height: 400px;
+    }
+    
     .menu-tabs {
     display: flex;
     flex-wrap: wrap;
