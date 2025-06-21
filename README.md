@@ -24,8 +24,7 @@
 
 ## 🌐 公開URL
 
-👉 (https://sakuppi.github.io/bagel.laboratory/)
-
+👉 [https://sakuppi.github.io/bagel.laboratory/](https://sakuppi.github.io/bagel.laboratory/)
 ## 📱 レスポンシブ対応
 
 スマートフォン、タブレット、PC 各画面幅に対応しています。
