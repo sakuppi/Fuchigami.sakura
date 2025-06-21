@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ベーグル研究所</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="top">
+        <h1 class="logo">ベーグル研究所</h1>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="nav" id="nav">
+            <ul>
+                <li class="nav-logo"><a href="#top">ベーグル研究所</a></li>
+                <li>
+                    <a href="#about">
+                        <span class="en">ABOUT</span>
+                        <span class="jp">私たちについて</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#recommend">
+                        <span class="en">RECOMMEND</span>
+                        <span class="jp">イチオシ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#lineup">
+                        <span class="en">LINEUP</span>
+                        <span class="jp">種類</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <span class="en">CONTACT</span>
+                        <span class="jp">お問合せ</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="about-inner">
+            <h2 data-aos="zoom-in">ABOUT</h2>
+        <p class="sub-title" data-aos="fade-up" data-aos-delay="100">ベーグル研究所について</p>
+            <p class="story-text" data-aos="fade-up" data-aos-delay="200">
+            ベーグル専門店に約3時間並んでた3年前。
+            </p>
+            <p class="story-text" data-aos="fade-up" data-aos-delay="400">
+                そんな時にふと、「自分でも作れるんじゃないか？」とひらめいたのがきっかけ。
+            </p>
+            <p class="story-text" data-aos="fade-up" data-aos-delay="500">
+                試行錯誤の末にはじめたのが、ベーグル作りでした。
+            </p>
+            <p class="story-text" data-aos="fade-up" data-aos-delay="600">
+            素材の組み合わせや焼き加減を何度も研究し、今では“自分だけのベーグル”が完成しました。
+            </p>
+            <p class="story-text" data-aos="fade-up" data-aos-delay="800">
+            食べた瞬間、ホッと心がほどけるような。そんなひとときを届けたくて、今日もこねています。
+            </p>
+        </div>
+    </section>
+    <div class="wave-top">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+        <path fill="#ffffff" d="M0,100 C480,0 960,100 1440,0 L1440,100 L0,100 Z"></path>
+        </svg>
+    </div>
+
+    <section id="recommend" class="recommend-section">
+        <h2 class="section-heading" data-aos="fade-up" data-aos-delay="300">ベーグル研究所のイチオシ</h2>
+        <p class="section-description" data-aos="fade-up" data-aos-delay="400">
+            ベーグル研究所スタッフが自信をもっておすすめする、いま一番食べてほしいベーグルです。<br>
+            毎日のごほうびにも、大切な人へのおすそわけにもぴったりの、ちょっと特別な美味しさをどうぞ。
+        </p>
+        <div class="swiper recommend-swiper">
+            <div class ="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="recommend1.jpeg" alt="カボチャクリームチーズベーグル">
+                <h3>カボチャクリームチーズベーグル</h3>
+                <p>カボチャの自然な甘さと<br>
+                    まろやかなクリームチーズが相性抜群！◎</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="recommend2.jpeg" alt="明太子大葉チーズベーグル">
+                <h3>明太子大葉チーズベーグル</h3>
+                <p>プチプチ博多の明太子ととろけるチーズ、<br>
+                    大葉の香りがアクセント。<br>
+                    和と洋がかけ合う人気の一品</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="recommend3.jpeg" alt="プレーンベーグル">
+                <h3>プレーンベーグル</h3>
+                <p>香ばしく焼き上げた、シンプルだからこそわかる、<br>
+                    国産小麦”春よ恋”の美味しさ。迷ったらまずこれ！</p>
+            </div>
+            <div class="swiper-slide">
+                <img src="recommend4.jpeg" alt="厚焼き卵のベーグルサンド">
+                <h3>厚焼き卵のベーグルサンド</h3>
+                <p>ふんわり卵とシャキッとレタス、<br>
+                    ハムとチーズもサンドした王道ベーグルサンド。<br>
+                    朝食にもぴったり！</p>
+            </div>
+        </div>
+        <!-- 矢印ボタン -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- ドット -->
+        <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+<!-- 上向き波（lineupが白なので fill: #f5f5f5） -->
+<div class="wave-top">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+        <path fill="#ffffff" d="M0,100 C360,0 1080,200 1440,100 L1440,0 L0,0 Z"></path>
+    </svg>
+</div>
+
+    <section id="lineup">
+        <h2 class="heading-jp" data-aos="zoom-in" data-aos-delay="300">ラインナップ</h2>
+        <p class="section-description" data-aos="fade-up" data-aos-delay="400">
+            豊富なラインナップをお楽しみください。<br>
+            「今日はどれにしよう？」そんなワクワクを感じてもらえるよう、<br>
+            種類ごとに個性豊かなベーグルをご用意しました。
+        </p>
+        <nav class="menu-tabs">
+            <button class="tab-button active" data-category="plain">プレーン系</button>
+            <button class="tab-button" data-category="sweet">甘い系</button>
+            <button class="tab-button" data-category="savory">おかず系</button>
+            <button class="tab-button" data-category="sand">サンド</button>
+        </nav>
+
+        <div class="menu-items">
+            <!-- プレーン系 -->
+            <div class="menu-group active" data-category="plain">
+                <div class="swiper-container">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                <img src="plain1.jpeg" alt="チョコベーグル">
+                <p class="bagel-name">チョコベーグル</p>
+                </div>
+                <div class="swiper-slide">
+                <img src="plain2.jpeg" alt="黒糖ベーグル">
+                <p class="bagel-name">黒糖ベーグル</p>
+                </div>
+                <div class="swiper-slide">
+                <img src="plain3.jpeg" alt="プレーンベーグル">
+                <p class="bagel-name">プレーンベーグル</p>
+                </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+</div>
+
+            <!-- 甘い系 -->
+            <div class="menu-group" data-category="sweet">
+                <div class="swiper-container">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                <img src="sweet1.jpeg" alt="さつまいもベーグル">
+                <p class="bagel-name">さつまいもベーグル</p>
+                </div>
+                <div class="swiper-slide">
+                <img src="sweet2.jpeg" alt="チョコベーグル">
+                <p class="bagel-name">チョコベーグル</p>
+                </div>
+                <div class="swiper-slide">
+                <img src="sweet3.jpeg" alt="抹茶×チョコベーグル">
+                <p class="bagel-name">抹茶×チョコベーグル</p>
+                </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+</div>
+
+            <!-- おかず系 -->
+            <div class="menu-group" data-category="savory">
+                <div class="swiper-container">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                <img src="savory1.jpeg" alt="明太子大葉ベーグル">
+                <p class="bagel-name">明太子大葉ベーグル</p>
+                </div>
+                <div class="swiper-slide">
+                <img src="savory2.jpeg" alt="豚じゃがベーグル">
+                <p class="bagel-name">豚じゃがベーグル</p>
+                </div>
+                <div class="swiper-slide">
+                <img src="savory3.jpeg" alt="夏野菜ベーグル">
+                <p class="bagel-name">夏野菜ベーグル</p>
+                </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+</div>
+
+
+            <!-- サンド -->
+            <div class="menu-group" data-category="sand">
+                <div class="swiper-container">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                <img src="sand1.jpeg" alt="タコライスベーグルサンド">
+                <p class="bagel-name">タコライスベーグルサンド</p>
+                </div>
+                <div class="swiper-slide">
+                <img src="sand2.jpeg" alt="生姜焼きベーグルサンド">
+                <p class="bagel-name">生姜焼きベーグルサンド</p>
+                </div>
+                <div class="swiper-slide">
+                <img src="sand3.jpeg" alt="卵とアボカドベーグルサンド">
+                <p class="bagel-name">卵とアボカドベーグルサンド</p>
+                </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+</div>
+</div>
+    </section>
+    <div class="wave-top">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+        <path fill="#ffffff" d="M0,100 C480,0 960,100 1440,0 L1440,100 L0,100 Z"></path>
+        </svg>
+    </div>
+    <section id="contact">
+        <h2 data-aos="fade-up" data-aos-delay="300">お問い合わせ</h2>
+        <div class="form-wrapper">
+            <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfhq2MtGmES-kk2mYWLBxO9yiL_7EtDZtuY_S6O3ikyAf6cWQ/viewform?usp=preview"
+            class="google-form"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0">
+            読み込んでいます…
+            </iframe>
+        </div>
+    </section>
+
+<footer>
+    <p>&copy; 2025 ベーグル研究所</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({
+    duration: 1000,
+    easing: 'ease-out-cubic',
+    once: true
+});
+</script>
+</body>
+</html>
