@@ -24,7 +24,7 @@
 
 ## 🌐 公開URL
 
-👉 [https://your-username.github.io/bagel-portfolio/]](https://github.com/sakuppi/bagel.laboratory.git)
+👉 (https://github.com/sakuppi/bagel.laboratory.git)
 
 ## 📱 レスポンシブ対応
 
