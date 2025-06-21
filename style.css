@@ -1,0 +1,557 @@
+
+body {
+    background-color: #f5f5f5;
+    font-family: 'M PLUS 1p', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+#about, #recommend, #lineup, #contact {
+    background-color: inherit;
+    padding: 60px 20px;
+}
+
+header {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    padding: 0.5rem 1rem;
+    background-color: #f8f5f2;
+    color: #6486EC;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+.hamburger {
+    position: static;
+    cursor: pointer;
+    width: 36px;
+    height: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1001;
+    margin-left: auto;
+}
+
+
+.hamburger span {
+    height: 4px;
+    width: 100%;
+    background: #6486EC;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+h2 {
+    color: #6486ec;
+    text-align: center;
+    font-family: 'Kiwi Maru', serif;
+    font-size: 2rem;
+}
+
+.heading-jp {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 500;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 60vw;
+    height: 100vh;
+    background: #f4b942;
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: left 0.3s ease;
+    z-index: 999;
+    padding-left: 2rem;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.nav.open {
+    left: 0;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.nav li {
+    margin: 20px 0;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.nav.open li {
+    animation: fadeUp 0.5s ease forwards;
+}
+
+.nav li:nth-child(1) { animation-delay: 0.1s; }
+.nav li:nth-child(2) { animation-delay: 0.2s; }
+.nav li:nth-child(3) { animation-delay: 0.3s; }
+.nav li:nth-child(4) { animation-delay: 0.4s; }
+.nav li:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+nav a {
+    text-decoration: none;
+    color: rgba(255,255,255,0.9);
+    font-weight: bold;
+    font-size: 1.8rem;
+    display: inline-block;
+    transition:  opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.6;
+}
+
+.nav a .jp {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: normal;
+    opacity: 0.7;
+    margin-top: 2px;
+}
+
+.nav-logo a {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #fff;
+    margin-top: 2rem;
+    margin-bottom: 60px;
+}
+
+
+.story-text {
+    color: #777;
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.about-inner {
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.about-inner p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    margin-bottom: 1.2rem;
+}
+
+.sub-title {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: -0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#about {
+    padding-bottom: 1.5rem;
+    background-color: #f5f5f5;
+}
+
+#recommend {
+    padding-top: 0.5rem;
+}
+
+.section-description {
+    color: #777;
+    font-size: 1rem;
+    line-height: 1.9;
+    margin-top: 0.5rem;
+    margin-bottom: 3.5rem;
+    text-align: center;
+}
+
+#recommend h2,
+#lineup h2 {
+    text-align: center;
+}
+
+.swiper {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+#recommend .swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+#lineup .swiper-pagination {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.swiper-slide {
+    text-align: center;
+    background: #fff;
+}
+
+.swiper-slide img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.swiper,
+.swiper-slide {
+    max-width: 100%;
+    overflow-wrap: break-word;
+}
+
+.swiper-slide img:hover {
+    transform: scale(1.05);
+    box-shadow:  0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.swiper-slide h3 {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #444;
+}
+
+.swiper-slide p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-top: 0.5rem;
+}
+
+.swiper-pagination-bullet {
+    background: #ccc;
+    opacity: 1;
+}
+
+#recommend .swiper-slide {
+    padding-bottom: 2rem;
+}
+
+.menu-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.tab-button {
+    border-radius: 30px;
+    background: #f6e0e9;
+    color: #333;
+    padding: 8px 20px;
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tab-button.active {
+    background-color: #6486EC;
+    color: white;
+}
+
+.menu-group {
+    display: none;
+}
+
+.menu-group.active {
+    display: block;
+}
+
+.bagel-name {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: #333;
+}
+
+#lineup .swiper-slide {
+    width: 100% !important;
+    box-sizing: border-box;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+#lineup .swiper {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+#lineup .swiper-wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#lineup .swiper-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: none;
+    margin-bottom: 1rem;
+}
+
+#lineup .bagel-name {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 0.5rem;
+}
+
+#contact {
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 2px solid #f6e0e9;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    background-color: white;
+}
+
+footer {
+    text-align: center;
+}
+
+#recommend {
+    background-color: #ffffff;
+}
+
+#lineup {
+    background-color: #f5f5f5;
+}
+
+#contact {
+    background-color: #ffffff;
+}
+
+.wave-top {
+    line-height: 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    margin-top: -1px;
+}
+
+.wave-top svg {
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+
+#recommend,
+#lineup,
+#contact {
+    position: relative;
+    z-index: 0;
+}
+
+.form-wrapper {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.google-form {
+    width: 100%;
+    height: 1000px;
+    border: none;
+    display: block;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+    padding: 1rem;
+    font-size: 1rem;
+    }
+
+    .logo {
+    font-size: 1.5rem;
+    }
+
+    .hamburger {
+    width: 30px;
+    height: 24px;
+    }
+
+    .hamburger span {
+    height: 3px;
+    }
+
+    .nav {
+    width: 80vw;
+    padding-left: 1.5rem;
+    }
+
+    nav a {
+    font-size: 1.5rem;
+    }
+
+    .nav a .jp {
+    font-size: 0.7rem;
+    }
+
+    .nav-logo a {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    }
+
+    section,
+    #about, #recommend, #lineup, #contact {
+    padding: 40px 16px;
+    }
+
+    h2 {
+    font-size: 1.5rem;
+    }
+
+    #about {
+        padding-top: 100px;
+    }
+
+    .about-inner {
+        padding: 1rem;
+        max-width: 100%;
+        text-align: center; /* 「ベーグル研究所について」だけ中央に */
+    }
+
+    .story-text,
+.section-description {
+    text-align: left;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+    word-break: keep-all;
+}
+
+.about-inner,
+.section-description,
+.story-text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 100%;
+    width: 100%;
+    word-break: break-word;
+}
+
+.swiper {
+    width: 95%;
+    padding-bottom: 120px;
+}
+
+.swiper-slide {
+    padding-bottom: 100px;
+    min-height: auto;
+}
+
+.swiper-slide img {
+    max-width: 100%;
+}
+
+.swiper-slide p {
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+
+.swiper-wrapper {
+    flex-wrap: nowrap !important;
+}
+
+    .menu-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    }
+
+    .tab-button {
+    flex: 0 1 calc(48% - 0.5rem);
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    white-space: nowrap;
+    }
+
+    .bagel-name {
+    font-size: 0.9rem;
+    }
+
+    .contact-form {
+    padding: 16px;
+    }
+}
