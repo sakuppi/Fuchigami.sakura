@@ -500,15 +500,17 @@ footer {
 }
 
 .about-inner,
+.about-inner p,
 .section-description,
 .story-text {
     padding-left: 1rem;
     padding-right: 1rem;
     max-width: 100%;
     width: 100%;
-    word-break: break-word;
+    word-break: normal;
+    line-break: strict;
+    white-space: normal;
 }
-
 .swiper {
     width: 95%;
     padding-bottom: 120px;
