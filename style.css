@@ -494,13 +494,18 @@ footer {
 
     .swiper {
     width: 95%;
-    padding-bottom: 100px; 
-    }
+    padding-bottom: 120px;
+  }
 
-    .swiper-slide {
-    padding-bottom: 3rem;
-    min-height: 400px;
-    }
+  .swiper-slide {
+    padding-bottom: 100px; 
+    min-height: auto;
+  }
+
+  .swiper-slide p {
+    margin-bottom: 2rem;  
+    font-size: 0.9rem;
+  }
     
     .menu-tabs {
     display: flex;
