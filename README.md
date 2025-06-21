@@ -24,7 +24,7 @@
 
 ## 🌐 公開URL
 
-👉 (https://github.com/sakuppi/bagel.laboratory.git)
+👉 (https://sakuppi.github.io/bagel.laboratory/)
 
 ## 📱 レスポンシブ対応
 
