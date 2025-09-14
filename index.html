@@ -1,274 +1,230 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ベーグル研究所</title>
-    <link rel="stylesheet" href="/bagel.laboratory/style.css?v=1"> 
-    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
-<link
-rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FUCHIGAMI SAKURA | Portfolio</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header" id="top">
-        <h1 class="logo">ベーグル研究所</h1>
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <nav class="nav" id="nav">
-            <ul>
-                <li class="nav-logo"><a href="#top">ベーグル研究所</a></li>
-                <li>
-                    <a href="#about">
-                        <span class="en">ABOUT</span>
-                        <span class="jp">私たちについて</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#recommend">
-                        <span class="en">RECOMMEND</span>
-                        <span class="jp">イチオシ</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#lineup">
-                        <span class="en">LINEUP</span>
-                        <span class="jp">種類</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#contact">
-                        <span class="en">CONTACT</span>
-                        <span class="jp">お問合せ</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="about">
-        <div class="about-inner">
-            <h2 data-aos="zoom-in">ABOUT</h2>
-        <p class="sub-title" data-aos="fade-up" data-aos-delay="100">ベーグル研究所について</p>
-            <p class="story-text" data-aos="fade-up" data-aos-delay="200">
-            ベーグル専門店に約3時間並んでた3年前。
-            </p>
-            <p class="story-text" data-aos="fade-up" data-aos-delay="400">
-                そんな時にふと、「自分でも作れるんじゃないか？」とひらめいたのがきっかけ。
-            </p>
-            <p class="story-text" data-aos="fade-up" data-aos-delay="500">
-                試行錯誤の末にはじめたのが、ベーグル作りでした。
-            </p>
-            <p class="story-text" data-aos="fade-up" data-aos-delay="600">
-            素材の組み合わせや焼き加減を何度も研究し、今では“自分だけのベーグル”が完成しました。
-            </p>
-            <p class="story-text" data-aos="fade-up" data-aos-delay="800">
-            食べた瞬間、ホッと心がほどけるような。そんなひとときを届けたくて、今日もこねています。
-            </p>
-        </div>
-    </section>
-    <div class="wave-top">
-        <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
-        <path fill="#ffffff" d="M0,100 C480,0 960,100 1440,0 L1440,100 L0,100 Z"></path>
-        </svg>
-    </div>
+  <div id="loader" aria-hidden="true">
+    <p class="loader__text">loading...</p>
 
-    <section id="recommend" class="recommend-section">
-        <h2 class="section-heading" data-aos="fade-up" data-aos-delay="300">ベーグル研究所のイチオシ</h2>
-        <p class="section-description" data-aos="fade-up" data-aos-delay="400">
-            ベーグル研究所スタッフが自信をもっておすすめする、いま一番食べてほしいベーグルです。<br>
-            毎日のごほうびにも、大切な人へのおすそわけにもぴったりの、ちょっと特別な美味しさをどうぞ。
-        </p>
-        <div class="swiper recommend-swiper">
-            <div class ="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="recommend1.jpeg" alt="カボチャクリームチーズベーグル">
-                <h3>カボチャクリームチーズベーグル</h3>
-                <p>カボチャの自然な甘さと<br>
-                    まろやかなクリームチーズが相性抜群！◎</p>
-            </div>
-            <div class="swiper-slide">
-                <img src="recommend2.jpeg" alt="明太子大葉チーズベーグル">
-                <h3>明太子大葉チーズベーグル</h3>
-                <p>プチプチ博多の明太子ととろけるチーズ、<br>
-                    大葉の香りがアクセント。<br>
-                    和と洋がかけ合う人気の一品</p>
-            </div>
-            <div class="swiper-slide">
-                <img src="recommend3.jpeg" alt="プレーンベーグル">
-                <h3>プレーンベーグル</h3>
-                <p>香ばしく焼き上げた、シンプルだからこそわかる、<br>
-                    国産小麦”春よ恋”の美味しさ。迷ったらまずこれ！</p>
-            </div>
-            <div class="swiper-slide">
-                <img src="recommend4.jpeg" alt="厚焼き卵のベーグルサンド">
-                <h3>厚焼き卵のベーグルサンド</h3>
-                <p>ふんわり卵とシャキッとレタス、<br>
-                    ハムとチーズもサンドした王道ベーグルサンド。<br>
-                    朝食にもぴったり！</p>
-            </div>
-        </div>
-        <!-- 矢印ボタン -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        <!-- ドット -->
-        <div class="swiper-pagination"></div>
-        </div>
-    </section>
+    <!-- 単体の傘（シンボル使わずパスを直置き） -->
+<svg class="umb umb--ext"
+style="--x:40%; --delay:0s; --dur:6s; --hue:330; --scale:1.0"
+viewBox="-1.5 0 24 24" aria-hidden="true">
+<path d="m17.852 11.059c-.968.001-1.837.426-2.431 1.1l-.003.004c-.596-.678-1.465-1.103-2.434-1.104-.968.001-1.837.426-2.431 1.099l-.003.004c-.597-.677-1.466-1.102-2.434-1.103-.968.001-1.837.426-2.431 1.099l-.003.004c-.597-.677-1.466-1.102-2.434-1.103-.002 0-.003 0-.005 0-.588 0-1.139.157-1.614.432l.016-.008c.276-4.705 4.156-8.417 8.904-8.423h.001c4.749.006 8.629 3.718 8.903 8.399l.001.024c-.459-.266-1.01-.423-1.598-.423-.002 0-.003 0-.005 0zm-6.484-9.597v-.646c0-.451-.366-.817-.817-.817-.451 0-.817.366-.817.817v.646c-5.461.442-9.727 4.98-9.735 10.515v2.333c0 .451.366.817.817.817.451 0 .816-.366.817-.817.001-.893.724-1.617 1.617-1.617.893.001 1.616.725 1.617 1.617 0 .451.366.817.817.817.451 0 .817-.366.817-.817.001-.893.724-1.617 1.617-1.617.893.001 1.617.724 1.617 1.617v6.439c.002 1.794 1.456 3.248 3.25 3.25 1.794-.002 3.248-1.456 3.25-3.25 0-.451-.366-.817-.817-.817-.451 0-.817.366-.817.817-.001.893-.724 1.616-1.616 1.617-.893-.001-1.617-.724-1.617-1.617v-6.439c.001-.893.724-1.617 1.617-1.617.893.001 1.616.725 1.617 1.617 0 .451.366.817.817.817.451 0 .817-.366.817-.817.001-.893.724-1.617 1.617-1.617.893.001 1.616.725 1.617 1.617 0 .451.366.817.817.817.451 0 .817-.366.817-.817v-2.332c-.008-5.536-4.273-10.073-9.696-10.514l-.038-.002z"/>
+</svg>
 
-<!-- 上向き波（lineupが白なので fill: #f5f5f5） -->
-<div class="wave-top">
-    <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
-        <path fill="#ffffff" d="M0,100 C360,0 1080,200 1440,100 L1440,0 L0,0 Z"></path>
+    <!-- (1) 使い回し用：傘シンボル（1回だけ） -->
+    <svg style="position:absolute; width:0; height:0; overflow:hidden;">
+      <symbol id="ico-umbrella" viewBox="-1.5 0 24 24">
+        <path d="m17.852 11.059c-...（略）...-0.002z"/>
+      </symbol>
     </svg>
+
+    <!-- (2) 表示用：色・位置ちがいで複数ならべる -->
+    <svg class="umb umb--ext" style="--x:10%; --delay:.1s; --dur:6.2s; --hue:330; --scale:1.00"><use href="#ico-umbrella"/></svg>
+    <svg class="umb umb--ext" style="--x:24%; --delay:.4s; --dur:5.8s; --hue:200; --scale:.95"><use href="#ico-umbrella"/></svg>
+    <svg class="umb umb--ext" style="--x:38%; --delay:.2s; --dur:6.4s; --hue:260; --scale:1.05"><use href="#ico-umbrella"/></svg>
+    <svg class="umb umb--ext" style="--x:54%; --delay:.6s; --dur:5.9s; --hue:150; --scale:.92"><use href="#ico-umbrella"/></svg>
+    <svg class="umb umb--ext" style="--x:70%; --delay:.0s; --dur:6.6s; --hue:55;  --scale:1.08"><use href="#ico-umbrella"/></svg>
+    <svg class="umb umb--ext" style="--x:86%; --delay:.3s; --dur:5.7s; --hue:20;  --scale:.90"><use href="#ico-umbrella"/></svg>
+  </div>
+
+  <!-- ====== HERO ====== -->
+<section class="hero-fade" id="hero">
+  <header class="hero" id="home">
+    <!-- 左：テキスト -->
+    <div class="hero__copy">
+    <h1 class="hero__title">
+        FUCHIGAMI<br />SAKURA
+    </h1>
+    <p class="hero__tagline">
+        コードを書く楽しさと<br />
+        デザインの奥深さに魅せられて<br />
+        未経験からはじめた挑戦を<br />
+        かたちにしていく毎日
+    </p>
 </div>
 
-    <section id="lineup">
-        <h2 class="heading-jp" data-aos="zoom-in" data-aos-delay="300">ラインナップ</h2>
-        <p class="section-description" data-aos="fade-up" data-aos-delay="400">
-            豊富なラインナップをお楽しみください。<br>
-            「今日はどれにしよう？」そんなワクワクを感じてもらえるよう、<br>
-            種類ごとに個性豊かなベーグルをご用意しました。
-        </p>
-        <nav class="menu-tabs">
-            <button class="tab-button active" data-category="plain">プレーン系</button>
-            <button class="tab-button" data-category="sweet">甘い系</button>
-            <button class="tab-button" data-category="savory">おかず系</button>
-            <button class="tab-button" data-category="sand">サンド</button>
-        </nav>
+<!-- 右：写真（上にナビを重ねる） -->
+<div class="hero__photo">
+  <nav class="hero__nav" aria-label="Primary">
+    <a href="#home">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#works">WORKS</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+      <img src="./img/hero.jpeg" alt="Walking under an umbrella" />
+  </div>
+</header>
 
-        <div class="menu-items">
-            <!-- プレーン系 -->
-            <div class="menu-group active" data-category="plain">
-                <div class="swiper-container">
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                <img src="plain1.jpeg" alt="チョコベーグル">
-                <p class="bagel-name">チョコベーグル</p>
-                </div>
-                <div class="swiper-slide">
-                <img src="plain2.jpeg" alt="黒糖ベーグル">
-                <p class="bagel-name">黒糖ベーグル</p>
-                </div>
-                <div class="swiper-slide">
-                <img src="plain3.jpeg" alt="プレーンベーグル">
-                <p class="bagel-name">プレーンベーグル</p>
-                </div>
-        </div>
-        <div class="swiper-pagination"></div>
+<!-- 下を流れる枠文字 -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__inner">
+    <span class="outline">welcome to my portfolio</span>
+  </div>
+</div>
+</section>
+
+<main>
+  <section id="about" class="about about--teaser">
+    <div class="about__profile">
+      <!-- タイトル -->
+      <h2 class="about__label">
+        <span>A</span><span>b</span><span>o</span><span>u</span><span>t</span>
+      </h2>
+
+      <!-- 写真部分 -->
+      <figure class="about__photo">
+        <img class="photo--before" src="img/profile_before.jpg" alt="淵上桜の近影（乾杯のスナップ）" loading="eager">
+        <img class="photo--after" src="img/profile_after.jpg" alt="" aria-hidden="true" loading="lazy">
+        <span class="fx-photoMask" aria-hidden="true"></span>
+      </figure>
+
+      <!-- 名前 -->
+      <h3 class="about__name">ふちがみ さくら</h3>
+
+      <!-- 自己紹介文 -->
+      <p class="about__bio">
+        1999年2月18日生まれの26歳。兵庫県在住<br>
+        よく食べて、よく飲んで、よく笑う。<br>
+        人懐っこくて前向きな性格<br>
+        真面目に、でも楽しく毎日を生きてます。<br>
+        好きなことは、旅行・音楽・温泉などなど…<br>
+        モットーは「人に優しく、自分にもっと優しく」<br>
+        心がフッと和らぐような、優しい世界で生きて<br>
+        いきたいなと思ってます。
+      </p>
+
+      <!-- ボタン -->
+      <a class="about__toggle" href="about.html">view more &gt;</a>
     </div>
-</div>
-</div>
 
-            <!-- 甘い系 -->
-            <div class="menu-group" data-category="sweet">
-                <div class="swiper-container">
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                <img src="sweet1.jpeg" alt="さつまいもベーグル">
-                <p class="bagel-name">さつまいもベーグル</p>
-                </div>
-                <div class="swiper-slide">
-                <img src="sweet2.jpeg" alt="チョコベーグル">
-                <p class="bagel-name">チョコベーグル</p>
-                </div>
-                <div class="swiper-slide">
-                <img src="sweet3.jpeg" alt="抹茶×チョコベーグル">
-                <p class="bagel-name">抹茶×チョコベーグル</p>
-                </div>
-        </div>
-        <div class="swiper-pagination"></div>
+    <div class="about__skills">
+      <h2 class="section--title" data-aos="fade-up">My Skills</h2>
+
+      <div class="services-grid">
+        <!-- Webデザイン -->
+        <article class="service">
+          <div class="service-box" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="service-title">Webデザイン</h3>
+            <img class="service-icon" src="img/icon-web.png" alt="Webデザイン アイコン">
+            <p class="service-text">
+              ユーザー目線で見やすく、<br>
+              心地よいデザインを意識しています。<br>
+              まだ学びながらですが、<br>
+              少しずつ理想のデザインを<br>
+              形にしています。
+            </p>
+          </div>
+        </article>
+
+        <!-- コーディング -->
+        <article class="service">
+          <div class="service-box" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="service-title">コーディング</h3>
+            <img class="service-icon" src="img/icon-code.png" alt="コーディング アイコン">
+            <p class="service-text">
+              HTML・CSSで正確な<br>
+              コーディングを行い、<br>
+              JavaScriptを用いて動きを<br>
+              加えることで<br>
+              サイトに楽しさや心地よさを<br>
+              プラスします。<br>
+              ユーザーに伝わる表現を<br>
+              追求しています。
+            </p>
+          </div>
+        </article>
+
+        <!-- 学習・成長中 -->
+        <article class="service">
+          <div class="service-box" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="service-title">学習・成長中</h3>
+            <img class="service-icon" src="img/icon-study.png" alt="学習 アイコン">
+            <p class="service-text">
+              日々さまざまなWebサイトや<br>
+              デザインに触れ<br>
+              良いと思ったアイデアを積極的に<br>
+              吸収しています。<br>
+              学んだことをすぐに実践し、<br>
+              成長に繋げる事を大切にしています。
+            </p>
+          </div>
+        </article>
+      </div>
     </div>
-</div>
-</div>
+  </section>
 
-            <!-- おかず系 -->
-            <div class="menu-group" data-category="savory">
-                <div class="swiper-container">
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                <img src="savory1.jpeg" alt="明太子大葉ベーグル">
-                <p class="bagel-name">明太子大葉ベーグル</p>
-                </div>
-                <div class="swiper-slide">
-                <img src="savory2.jpeg" alt="豚じゃがベーグル">
-                <p class="bagel-name">豚じゃがベーグル</p>
-                </div>
-                <div class="swiper-slide">
-                <img src="savory3.jpeg" alt="夏野菜ベーグル">
-                <p class="bagel-name">夏野菜ベーグル</p>
-                </div>
+  <section id="works" class="works" aria-label="Works">
+    <div class="works__inner">
+      <h2 class="works__title" data-aos="fade-up">Works</h2>
+      <p class="works__lead" data-aos="fade-up">趣味と学びをかけあわせた制作物をまとめました。</p>
+
+<ul class="works__cards">
+        <!-- ベーグル研究所 -->
+  <li class="work-card" data-aos="fade-up" data-aos-duration="800">
+    <a class="work-card__link"
+    href="https://sakuppi.github.io/bagel.laboratory/"
+    aria-label="ベーグル研究所へ">
+      <div class="work-card__thumb">
+        <img src="img/works-bagel.jpg" alt="ベーグル研究所 トップ写真" loading="lazy">
+          </div>
+            <span class="work-card__label">ベーグル研究所</span>
+    </a>
+</li>
+
+<!-- ワタシタビ -->
+  <li class="work-card" data-aos="fade-up" data-aos-duration="800">
+    <a class="work-card__link"
+    href="https://sakuppi.github.io/watashitabi/"
+    aria-label="ワタシタビへ">
+      <div class="work-card__thumb">
+        <img src="img/works-trip.JPG" alt="ワタシタビ トップ写真" loading="lazy">
         </div>
-        <div class="swiper-pagination"></div>
-    </div>
-</div>
-</div>
+            <span class="work-card__label">ワタシタビ</span>
+    </a>
+    </li>
+</ul>
 
-
-            <!-- サンド -->
-            <div class="menu-group" data-category="sand">
-                <div class="swiper-container">
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                <img src="sand1.jpeg" alt="タコライスベーグルサンド">
-                <p class="bagel-name">タコライスベーグルサンド</p>
-                </div>
-                <div class="swiper-slide">
-                <img src="sand2.jpeg" alt="生姜焼きベーグルサンド">
-                <p class="bagel-name">生姜焼きベーグルサンド</p>
-                </div>
-                <div class="swiper-slide">
-                <img src="sand3.jpeg" alt="卵とアボカドベーグルサンド">
-                <p class="bagel-name">卵とアボカドベーグルサンド</p>
-                </div>
-        </div>
-        <div class="swiper-pagination"></div>
+      <div class="works__actions">
+        <a class="btn-viewmore" href="works.html">view more &gt;</a>
+      </div>
     </div>
-</div>
-</div>
-</div>
-    </section>
-    <div class="wave-top">
-        <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
-        <path fill="#ffffff" d="M0,100 C480,0 960,100 1440,0 L1440,100 L0,100 Z"></path>
-        </svg>
-    </div>
-    <section id="contact">
-        <h2 data-aos="fade-up" data-aos-delay="300">お問い合わせ</h2>
-        <div class="form-wrapper">
-            <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLSfhq2MtGmES-kk2mYWLBxO9yiL_7EtDZtuY_S6O3ikyAf6cWQ/viewform?usp=preview"
-            class="google-form"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0">
-            読み込んでいます…
-            </iframe>
-        </div>
-    </section>
+  </section>
 
-<footer>
-    <p>&copy; 2025 ベーグル研究所</p>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="main.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <section id="contact" class="contact-cta contact-cta--compact">
+    <div class="contact-cta__inner">
+    <p class="contact-cta__text">
+        お仕事のご相談やご質問など、お気軽にご連絡ください。<br>
+        ご連絡は、下記お問い合わせフォームよりお願いいたします。
+    </p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdf37eJR6pwObuYA1Nl8p40JtPFFOCNvhPlZLIgVJe7UtfsaQ/viewform?usp=header"
+        class="contact-cta__btn"
+        target="_blank" rel="noopener noreferrer">
+        Contact me >
+    </a>
+    </div>
+</section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script src="./main.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
-AOS.init({
-    duration: 1000,
-    easing: 'ease-out-cubic',
-    once: true
-});
+  AOS.init({
+    offset: 80,
+    duration: 800,
+    easing: 'ease-out',
+    once: true,
+  });
 </script>
 </body>
 </html>
